@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foam?Form!</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        
+</head>
+    
+<body>
+    <div class="exp">
+    <h4>This is a form to test your honesty..?</h4>
+        <h5>Let's talk about you.. :)</h5></div>
+    <section>
+    <h1><strong>This Form</strong></h1>
+    <div class="question">
+    <h4>What's your nickname?</h4>
+    <input id="name" type="text" placeholder="  Funny one is better"/>
+    <h4>How old are you?19?</h4>
+    <input id="age" placeholder="  I'm 145 lol" />
+    <h4>Do you have a bf or gf ?</h4>
+    <input id="bf" placeholder="  What's bf? food?" />
+    <h4>Where do you live?</h4>
+    <select id="home">
+    <option>----------</option>
+	<option>Fancy Manhattan</option>
+	<option>Trendy Brooklyn</option>
+	<option>Authentic Queens</option>
+	<option>Cool The Bronx</option>
+    <option>Oh! Jersey Shore?</option>
+    </select>
+        <h4>What's your blood type?</h4>
+    <select id="type"t>
+    <option>what's that..</option>
+	<option>Good organizer A type</option>
+	<option>Self centered B type</option>
+	<option>Bubbly O type</option>
+	<option>Genius or Idiot AB type</option>
+    <option>I really don't know..</option>
+    </select>
+    <h4>How do you describe yourself?</h4>
+    <input id="self" placeholder="  I am pretty selfish?!"/>
+    <h4>What's on your mind? (Copying FB?)</h4>
+        
+    <textarea id="comment"> </textarea>
+    </div>
+    
+    <br>
+        <button id="submit">I'm done!</button>
+    <div id="message"></div>
+    
+    </section>
+    
+    <script type="text/javascript">
+       
+        confirm("Hey! buddy! Today is Tuesday,and where is Friday? lol");
+      
+        confirm("I will ask your personal questions, can you be honest?");
+        
+        var submit = document.getElementById("submit");
+        submit.onclick = function() {
+	    var name = document.getElementById("name").value;
+	    var age = document.getElementById("age").value;
+        var bf = document.getElementById("bf").value;
+	    var home= document.getElementById("home").value;
+        var type= document.getElementById("type").value;
+        var self= document.getElementById("self").value;
+        var comment= document.getElementById("comment").value;
+	     console.log(name, age, bf, home, type, self, comment);
+	    
+        var message = document.getElementById("message");
+	    message.innerHTML = " Hello " + name + "! I know you are  " + age + "years old, and you are from "
+	    + home + ". You are " + type + ". You describe yourself " + self + "?!" + comment + " is on your mind, Thanks for your honesty, tired?.";
+    };
+        
+    
+    
+    </script>
+  
+    
+</body>
+
+</html>
